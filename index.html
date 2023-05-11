@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>kneil friendship bonding</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- bootstrap css-->
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function onFormSubmit() {
+                var timeconfirmed = document.querySelector('input[id="time-confirm-yes"]:checked').value;
+                //make sure name and email are filled out
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var date = document.getElementById("date").value;
+                // if they're not filed out then alert the user
+                if (name == "" || email == "" || date == "") {
+                    alert("Please fill out all fields.");
+                    return;
+                }
+                if (timeconfirmed) {
+                    document.getElementById("result").innerHTML="Your application has been accepted! Contact kneil at <a href=\"mailto:k122696@students.katyisd.org\">this email</a> to confirm your session."
+                } else {
+                    document.getElementById("result").innerHTML="Your application has been rejected. Please try again later.";
+                }
+             }
+        </script>
+    </head>
+    <body>
+        <h1><span id="title">kneil friendship bonding</span></h1>
+        <p>enjoy friendship bonding with <span id="name"><b><i>kneil sunny boy madamecar madagascar momcar krishna</b></i></span> :))))</p>
+        <h2>activities</h2>
+        <p>in friendship bonding, we do:</p>
+        <ul>
+            <li>holding hands</li>
+            <li>kissing</li>
+            <li>talking about your feelings</li>
+            <li>talking about your day</li>
+        </ul>
+        <h2>book a session</h2>
+        <label for="name">name</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="your name"><br>
+        <label for="email">email</label><br>
+        <input type="email" id="email" name="email" placeholder="your email"><br>
+        <label for="date">date</label><br>
+        <input type="date" id="date" name="date"><br>
+        <label for="time-confirm">do you have second period pe</label><br>
+        <label>yes:</label>
+        <input type="radio" id="time-confirm-yes" name="time-confirm" value="yes"><br>
+        <label>no:</label>
+        <input type="radio" id="time-confirm" name="time-confirm" value="no"><br>
+        <button onclick="onFormSubmit();">Submit</button>
+        <p id="result"></p>
+    </body>
+</html>
