@@ -27,31 +27,35 @@
              }
         </script>
     </head>
-    <body>
-        <h1><span id="title">kneil friendship bonding</span></h1>
-        <p>enjoy friendship bonding with <span id="name"><b><i>kneil sunny boy madamecar madagascar momcar krishna</b></i></span> :))))</p>
-        <h2>activities</h2>
-        <p>in friendship bonding, we do:</p>
+    <body class="bg">
+        <h1><span id="title" class="text">kneil friendship bonding</span></h1>
+        <p class="text">enjoy friendship bonding with <span id="name"><b><i>kneil sunny boy madamecar madagascar momcar krishna</b></i></span> :))))</p>
+        <h2 class="text">activities</h2>
+        <p class="text">in friendship bonding, we do:</p>
         <ul>
-            <li>holding hands</li>
-            <li>kissing</li>
-            <li>talking about your feelings</li>
-            <li>talking about your day</li>
+            <li class="text">holding hands</li>
+            <li class="text">kissing</li>
+            <li class="text">talking about your feelings</li>
+            <li class="text">talking about your day</li>
         </ul>
-        <h2>book a session</h2>
-        <label for="name">name</label>
+        <h2 class="text">book a session</h2>
+        <label for="name" class="text">name</label>
         <br>
         <input type="text" id="name" name="name" placeholder="your name"><br>
-        <label for="email">email</label><br>
+        <label for="email" class="text">email</label><br>
         <input type="email" id="email" name="email" placeholder="your email"><br>
-        <label for="date">date</label><br>
+        <label for="date" class="text">date</label><br>
         <input type="date" id="date" name="date"><br>
-        <label for="time-confirm">do you have second period pe</label><br>
-        <label>yes:</label>
+        <label for="time-confirm" class="text">do you have second period pe</label><br>
+        <label class="text">yes:</label>
         <input type="radio" id="time-confirm-yes" name="time-confirm" value="yes"><br>
-        <label>no:</label>
+        <label class="text">no:</label>
         <input type="radio" id="time-confirm" name="time-confirm" value="no"><br>
         <button onclick="onFormSubmit();">Submit</button>
-        <p id="result"></p>
+        <p id="result" class="text"></p>
     </body>
+    <script src="script.js"></script>
+    <script>
+        bg();
+    </script>
 </html>
